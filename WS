@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Find Your Next Book</h1>
+  <form id="book-form">
+    <label>Genre:
+      <select name="genre">
+        <option value="">Any</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Mystery">Mystery</option>
+      </select>
+    </label><br><br>
+
+    <label>Author:
+      <input type="text" name="author">
+    </label><br><br>
+
+    <label>Price Range:
+      <input type="number" name="minPrice" placeholder="Min" step="0.01">
+      -
+      <input type="number" name="maxPrice" placeholder="Max" step="0.01">
+    </label><br><br>
+
+    <label>Language:
+      <select name="language">
+        <option value="">Any</option>
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+      </select>
+    </label><br><br>
+
+    <label>Format:
+      <select name="format">
+        <option value="">Any</option>
+        <option value="Hardcover">Hardcover</option>
+        <option value="Paperback">Paperback</option>
+        <option value="eBook">eBook</option>
+      </select>
+    </label><br><br>
+
+    <label>Published After:
+      <input type="number" name="year" placeholder="e.g., 2015">
+    </label><br><br>
+
+    <button type="submit">Find Books</button>
+  </form>
+
+  <div class="results" id="results"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+ 
